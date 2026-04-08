@@ -1,0 +1,388 @@
+2026-03-27 11:42:40 [rank 0] INFO: Logger initialized. Logs will be written to results/DGM4/probe/sdpa/qwen3_vl_2B/0-256/probing_rank0.log
+2026-03-27 11:42:40 [rank 0] INFO: Multiprocessing start method set to 'spawn'.
+2026-03-27 11:42:40 [rank 0] INFO: ⚠️  [Probing] Disabled ZeRO optimization (stage -> 0) for inference-only mode
+2026-03-27 11:42:40 [rank 0] INFO: ===== SYSTEM SNAPSHOT =====
+rank/world: 0/1
+OS: Linux 5.15.0-164-generic (#174-Ubuntu SMP Fri Nov 14 20:25:16 UTC 2025)
+CPU logical/physical: 96/48
+Load(1m): 1.486328125
+Threads (intra/inter): 1/1
+GPU[0] NVIDIA A100 80GB PCIe total_mem=79.14 GB (cuda_count=1)
+Attention backend: sdpa
+Env: {'CUDA_VISIBLE_DEVICES': '7', 'LOCAL_RANK': '0', 'RANK': '0', 'WORLD_SIZE': '1', 'NCCL_IB_DISABLE': '1', 'NCCL_DEBUG': '-', 'OMP_NUM_THREADS': '1', 'MKL_NUM_THREADS': '1', 'NUMEXPR_NUM_THREADS': '1', 'TOKENIZERS_PARALLELISM': 'false'}
+Train micro batch / GPU: 24 | DP=1 GACC=1 | global_micro(b/sample-step)=24
+===========================
+2026-03-27 11:42:40 [rank 0] INFO: [numeric] torch=2.8.0+cu128
+2026-03-27 11:42:40 [rank 0] INFO: [numeric] cuda_compiled=12.8
+2026-03-27 11:42:40 [rank 0] INFO: [numeric] cuda_runtime=12.8
+2026-03-27 11:42:40 [rank 0] INFO: [numeric] device_name=NVIDIA A100 80GB PCIe
+2026-03-27 11:42:40 [rank 0] INFO: [numeric] attn_impl=sdpa
+2026-03-27 11:42:40 [rank 0] INFO: [numeric] sdp_flash=False
+2026-03-27 11:42:40 [rank 0] INFO: [numeric] sdp_mem_efficient=True
+2026-03-27 11:42:40 [rank 0] INFO: [numeric] sdp_math=True
+2026-03-27 11:42:40 [rank 0] INFO: [numeric] allow_tf32_matmul=False
+2026-03-27 11:42:40 [rank 0] INFO: [numeric] allow_tf32_cudnn=True
+2026-03-27 11:42:40 [rank 0] INFO: [numeric] PYTORCH_FORCE_DISABLE_FUSED_SDPA=None
+2026-03-27 11:42:40 [rank 0] INFO: [numeric] flash_attn_version=2.8.3
+2026-03-27 11:42:40 [rank 0] INFO: [numeric] os=Linux 5.15.0-164-generic
+2026-03-27 11:42:40 [rank 0] INFO: ================================================================================
+2026-03-27 11:42:40 [rank 0] INFO: 🔍 [Probing v1] Inference-time Modal Head Localization
+2026-03-27 11:42:40 [rank 0] INFO: ================================================================================
+2026-03-27 11:42:40 [rank 0] INFO: 📊 Unimodal ratio: 0.0%
+2026-03-27 11:42:40 [rank 0] INFO: ================================================================================
+2026-03-27 11:42:40 [rank 0] INFO: Using fixed subset: Top 0 samples for unimodal probing.
+2026-03-27 11:42:41 [rank 0] INFO: 
+[1/4] Loading model with DeepSpeed...
+2026-03-27 11:42:41 [rank 0] INFO: [Model] Using attention implementation: sdpa
+2026-03-27 11:42:45 [rank 0] INFO: Model initialized with DeepSpeed on device 0
+2026-03-27 11:42:45 [rank 0] INFO: Model type after penetration: Qwen3VLForConditionalGeneration_Custom
+2026-03-27 11:42:45 [rank 0] INFO: 
+[2/4] Enabling attention collection...
+2026-03-27 11:42:45 [rank 0] INFO: Attention collection enabled
+2026-03-27 11:42:45 [rank 0] INFO: 
+[3/4] Collecting attention statistics...
+2026-03-27 11:42:45 [rank 0] INFO:   [3.1] Collecting from img_only data...
+2026-03-27 11:42:45 [rank 0] INFO:   [3.2] Collecting from text_only data...
+2026-03-27 11:42:45 [rank 0] INFO:   [3.3] Collecting from multimodal data...
+2026-03-27 11:43:26 [rank 0] INFO: Logger initialized. Logs will be written to results/DGM4/probe/sdpa/qwen3_vl_2B/0-256/probing_rank0.log
+2026-03-27 11:43:26 [rank 0] INFO: Multiprocessing start method set to 'spawn'.
+2026-03-27 11:43:26 [rank 0] INFO: ⚠️  [Probing] Disabled ZeRO optimization (stage -> 0) for inference-only mode
+2026-03-27 11:43:26 [rank 0] INFO: ===== SYSTEM SNAPSHOT =====
+rank/world: 0/1
+OS: Linux 5.15.0-164-generic (#174-Ubuntu SMP Fri Nov 14 20:25:16 UTC 2025)
+CPU logical/physical: 96/48
+Load(1m): 1.81005859375
+Threads (intra/inter): 1/1
+GPU[0] NVIDIA A100 80GB PCIe total_mem=79.14 GB (cuda_count=1)
+Attention backend: sdpa
+Env: {'CUDA_VISIBLE_DEVICES': '7', 'LOCAL_RANK': '0', 'RANK': '0', 'WORLD_SIZE': '1', 'NCCL_IB_DISABLE': '1', 'NCCL_DEBUG': '-', 'OMP_NUM_THREADS': '1', 'MKL_NUM_THREADS': '1', 'NUMEXPR_NUM_THREADS': '1', 'TOKENIZERS_PARALLELISM': 'false'}
+Train micro batch / GPU: 24 | DP=1 GACC=1 | global_micro(b/sample-step)=24
+===========================
+2026-03-27 11:43:26 [rank 0] INFO: [numeric] torch=2.8.0+cu128
+2026-03-27 11:43:26 [rank 0] INFO: [numeric] cuda_compiled=12.8
+2026-03-27 11:43:26 [rank 0] INFO: [numeric] cuda_runtime=12.8
+2026-03-27 11:43:26 [rank 0] INFO: [numeric] device_name=NVIDIA A100 80GB PCIe
+2026-03-27 11:43:26 [rank 0] INFO: [numeric] attn_impl=sdpa
+2026-03-27 11:43:26 [rank 0] INFO: [numeric] sdp_flash=False
+2026-03-27 11:43:26 [rank 0] INFO: [numeric] sdp_mem_efficient=True
+2026-03-27 11:43:26 [rank 0] INFO: [numeric] sdp_math=True
+2026-03-27 11:43:26 [rank 0] INFO: [numeric] allow_tf32_matmul=False
+2026-03-27 11:43:26 [rank 0] INFO: [numeric] allow_tf32_cudnn=True
+2026-03-27 11:43:26 [rank 0] INFO: [numeric] PYTORCH_FORCE_DISABLE_FUSED_SDPA=None
+2026-03-27 11:43:26 [rank 0] INFO: [numeric] flash_attn_version=2.8.3
+2026-03-27 11:43:26 [rank 0] INFO: [numeric] os=Linux 5.15.0-164-generic
+2026-03-27 11:43:26 [rank 0] INFO: ================================================================================
+2026-03-27 11:43:26 [rank 0] INFO: 🔍 [Probing v1] Inference-time Modal Head Localization
+2026-03-27 11:43:26 [rank 0] INFO: ================================================================================
+2026-03-27 11:43:26 [rank 0] INFO: 📊 Unimodal ratio: 0.0%
+2026-03-27 11:43:26 [rank 0] INFO: ================================================================================
+2026-03-27 11:43:26 [rank 0] INFO: Using fixed subset: Top 0 samples for unimodal probing.
+2026-03-27 11:43:27 [rank 0] INFO: 
+[1/4] Loading model with DeepSpeed...
+2026-03-27 11:43:27 [rank 0] INFO: [Model] Using attention implementation: sdpa
+2026-03-27 11:43:31 [rank 0] INFO: Model initialized with DeepSpeed on device 0
+2026-03-27 11:43:31 [rank 0] INFO: Model type after penetration: Qwen3VLForConditionalGeneration_Custom
+2026-03-27 11:43:31 [rank 0] INFO: 
+[2/4] Enabling attention collection...
+2026-03-27 11:43:31 [rank 0] INFO: Attention collection enabled
+2026-03-27 11:43:31 [rank 0] INFO: 
+[3/4] Collecting attention statistics...
+2026-03-27 11:43:31 [rank 0] INFO:   [3.1] Collecting from img_only data...
+2026-03-27 11:43:31 [rank 0] INFO:   [3.2] Collecting from text_only data...
+2026-03-27 11:43:31 [rank 0] INFO:   [3.3] Collecting from multimodal data...
+2026-03-27 11:44:32 [rank 0] INFO: Logger initialized. Logs will be written to results/DGM4/probe/sdpa/qwen3_vl_2B/0-256/probing_rank0.log
+2026-03-27 11:44:32 [rank 0] INFO: Multiprocessing start method set to 'spawn'.
+2026-03-27 11:44:32 [rank 0] INFO: ⚠️  [Probing] Disabled ZeRO optimization (stage -> 0) for inference-only mode
+2026-03-27 11:44:32 [rank 0] INFO: ===== SYSTEM SNAPSHOT =====
+rank/world: 0/1
+OS: Linux 5.15.0-164-generic (#174-Ubuntu SMP Fri Nov 14 20:25:16 UTC 2025)
+CPU logical/physical: 96/48
+Load(1m): 1.89208984375
+Threads (intra/inter): 1/1
+GPU[0] NVIDIA A100 80GB PCIe total_mem=79.14 GB (cuda_count=1)
+Attention backend: sdpa
+Env: {'CUDA_VISIBLE_DEVICES': '7', 'LOCAL_RANK': '0', 'RANK': '0', 'WORLD_SIZE': '1', 'NCCL_IB_DISABLE': '1', 'NCCL_DEBUG': '-', 'OMP_NUM_THREADS': '1', 'MKL_NUM_THREADS': '1', 'NUMEXPR_NUM_THREADS': '1', 'TOKENIZERS_PARALLELISM': 'false'}
+Train micro batch / GPU: 24 | DP=1 GACC=1 | global_micro(b/sample-step)=24
+===========================
+2026-03-27 11:44:32 [rank 0] INFO: [numeric] torch=2.8.0+cu128
+2026-03-27 11:44:32 [rank 0] INFO: [numeric] cuda_compiled=12.8
+2026-03-27 11:44:32 [rank 0] INFO: [numeric] cuda_runtime=12.8
+2026-03-27 11:44:32 [rank 0] INFO: [numeric] device_name=NVIDIA A100 80GB PCIe
+2026-03-27 11:44:32 [rank 0] INFO: [numeric] attn_impl=sdpa
+2026-03-27 11:44:32 [rank 0] INFO: [numeric] sdp_flash=False
+2026-03-27 11:44:32 [rank 0] INFO: [numeric] sdp_mem_efficient=True
+2026-03-27 11:44:32 [rank 0] INFO: [numeric] sdp_math=True
+2026-03-27 11:44:32 [rank 0] INFO: [numeric] allow_tf32_matmul=False
+2026-03-27 11:44:32 [rank 0] INFO: [numeric] allow_tf32_cudnn=True
+2026-03-27 11:44:32 [rank 0] INFO: [numeric] PYTORCH_FORCE_DISABLE_FUSED_SDPA=None
+2026-03-27 11:44:32 [rank 0] INFO: [numeric] flash_attn_version=2.8.3
+2026-03-27 11:44:32 [rank 0] INFO: [numeric] os=Linux 5.15.0-164-generic
+2026-03-27 11:44:32 [rank 0] INFO: ================================================================================
+2026-03-27 11:44:32 [rank 0] INFO: 🔍 [Probing v1] Inference-time Modal Head Localization
+2026-03-27 11:44:32 [rank 0] INFO: ================================================================================
+2026-03-27 11:44:32 [rank 0] INFO: 📊 Unimodal ratio: 0.0%
+2026-03-27 11:44:32 [rank 0] INFO: ================================================================================
+2026-03-27 11:44:32 [rank 0] INFO: Using fixed subset: Top 0 samples for unimodal probing.
+2026-03-27 11:44:33 [rank 0] INFO: 
+[1/4] Loading model with DeepSpeed...
+2026-03-27 11:44:33 [rank 0] INFO: [Model] Using attention implementation: sdpa
+2026-03-27 11:44:37 [rank 0] INFO: Model initialized with DeepSpeed on device 0
+2026-03-27 11:44:37 [rank 0] INFO: Model type after penetration: Qwen3VLForConditionalGeneration_Custom
+2026-03-27 11:44:37 [rank 0] INFO: 
+[2/4] Enabling attention collection...
+2026-03-27 11:44:37 [rank 0] INFO: Attention collection enabled
+2026-03-27 11:44:37 [rank 0] INFO: 
+[3/4] Collecting attention statistics...
+2026-03-27 11:44:37 [rank 0] INFO:   [3.1] Collecting from img_only data...
+2026-03-27 11:44:37 [rank 0] INFO:   [3.2] Collecting from text_only data...
+2026-03-27 11:44:37 [rank 0] INFO:   [3.3] Collecting from multimodal data...
+2026-03-27 11:45:28 [rank 0] INFO: Logger initialized. Logs will be written to results/DGM4/probe/sdpa/qwen3_vl_2B/0-256/probing_rank0.log
+2026-03-27 11:45:28 [rank 0] INFO: Multiprocessing start method set to 'spawn'.
+2026-03-27 11:45:28 [rank 0] INFO: ⚠️  [Probing] Disabled ZeRO optimization (stage -> 0) for inference-only mode
+2026-03-27 11:45:28 [rank 0] INFO: ===== SYSTEM SNAPSHOT =====
+rank/world: 0/1
+OS: Linux 5.15.0-164-generic (#174-Ubuntu SMP Fri Nov 14 20:25:16 UTC 2025)
+CPU logical/physical: 96/48
+Load(1m): 1.9609375
+Threads (intra/inter): 1/1
+GPU[0] NVIDIA A100 80GB PCIe total_mem=79.14 GB (cuda_count=1)
+Attention backend: sdpa
+Env: {'CUDA_VISIBLE_DEVICES': '7', 'LOCAL_RANK': '0', 'RANK': '0', 'WORLD_SIZE': '1', 'NCCL_IB_DISABLE': '1', 'NCCL_DEBUG': '-', 'OMP_NUM_THREADS': '1', 'MKL_NUM_THREADS': '1', 'NUMEXPR_NUM_THREADS': '1', 'TOKENIZERS_PARALLELISM': 'false'}
+Train micro batch / GPU: 24 | DP=1 GACC=1 | global_micro(b/sample-step)=24
+===========================
+2026-03-27 11:45:28 [rank 0] INFO: [numeric] torch=2.8.0+cu128
+2026-03-27 11:45:28 [rank 0] INFO: [numeric] cuda_compiled=12.8
+2026-03-27 11:45:28 [rank 0] INFO: [numeric] cuda_runtime=12.8
+2026-03-27 11:45:28 [rank 0] INFO: [numeric] device_name=NVIDIA A100 80GB PCIe
+2026-03-27 11:45:28 [rank 0] INFO: [numeric] attn_impl=sdpa
+2026-03-27 11:45:28 [rank 0] INFO: [numeric] sdp_flash=False
+2026-03-27 11:45:28 [rank 0] INFO: [numeric] sdp_mem_efficient=True
+2026-03-27 11:45:28 [rank 0] INFO: [numeric] sdp_math=True
+2026-03-27 11:45:28 [rank 0] INFO: [numeric] allow_tf32_matmul=False
+2026-03-27 11:45:28 [rank 0] INFO: [numeric] allow_tf32_cudnn=True
+2026-03-27 11:45:28 [rank 0] INFO: [numeric] PYTORCH_FORCE_DISABLE_FUSED_SDPA=None
+2026-03-27 11:45:28 [rank 0] INFO: [numeric] flash_attn_version=2.8.3
+2026-03-27 11:45:28 [rank 0] INFO: [numeric] os=Linux 5.15.0-164-generic
+2026-03-27 11:45:28 [rank 0] INFO: ================================================================================
+2026-03-27 11:45:28 [rank 0] INFO: 🔍 [Probing v1] Inference-time Modal Head Localization
+2026-03-27 11:45:28 [rank 0] INFO: ================================================================================
+2026-03-27 11:45:28 [rank 0] INFO: 📊 Unimodal ratio: 0.0%
+2026-03-27 11:45:28 [rank 0] INFO: ================================================================================
+2026-03-27 11:45:28 [rank 0] INFO: Using fixed subset: Top 0 samples for unimodal probing.
+2026-03-27 11:45:29 [rank 0] INFO: 
+[1/4] Loading model with DeepSpeed...
+2026-03-27 11:45:29 [rank 0] INFO: [Model] Using attention implementation: sdpa
+2026-03-27 11:45:33 [rank 0] INFO: Model initialized with DeepSpeed on device 0
+2026-03-27 11:45:33 [rank 0] INFO: Model type after penetration: Qwen3VLForConditionalGeneration_Custom
+2026-03-27 11:45:33 [rank 0] INFO: 
+[2/4] Enabling attention collection...
+2026-03-27 11:45:33 [rank 0] INFO: Attention collection enabled
+2026-03-27 11:45:33 [rank 0] INFO: 
+[3/4] Collecting attention statistics...
+2026-03-27 11:45:33 [rank 0] INFO:   [3.1] Collecting from img_only data...
+2026-03-27 11:45:33 [rank 0] INFO:   [3.2] Collecting from text_only data...
+2026-03-27 11:45:33 [rank 0] INFO:   [3.3] Collecting from multimodal data...
+2026-03-27 11:47:30 [rank 0] INFO: Logger initialized. Logs will be written to results/DGM4/probe/sdpa/qwen3_vl_2B/0-256/probing_rank0.log
+2026-03-27 11:47:30 [rank 0] INFO: Multiprocessing start method set to 'spawn'.
+2026-03-27 11:47:30 [rank 0] INFO: ⚠️  [Probing] Disabled ZeRO optimization (stage -> 0) for inference-only mode
+2026-03-27 11:47:30 [rank 0] INFO: ===== SYSTEM SNAPSHOT =====
+rank/world: 0/1
+OS: Linux 5.15.0-164-generic (#174-Ubuntu SMP Fri Nov 14 20:25:16 UTC 2025)
+CPU logical/physical: 96/48
+Load(1m): 1.8525390625
+Threads (intra/inter): 1/1
+GPU[0] NVIDIA A100 80GB PCIe total_mem=79.14 GB (cuda_count=1)
+Attention backend: sdpa
+Env: {'CUDA_VISIBLE_DEVICES': '7', 'LOCAL_RANK': '0', 'RANK': '0', 'WORLD_SIZE': '1', 'NCCL_IB_DISABLE': '1', 'NCCL_DEBUG': '-', 'OMP_NUM_THREADS': '1', 'MKL_NUM_THREADS': '1', 'NUMEXPR_NUM_THREADS': '1', 'TOKENIZERS_PARALLELISM': 'false'}
+Train micro batch / GPU: 24 | DP=1 GACC=1 | global_micro(b/sample-step)=24
+===========================
+2026-03-27 11:47:30 [rank 0] INFO: [numeric] torch=2.8.0+cu128
+2026-03-27 11:47:30 [rank 0] INFO: [numeric] cuda_compiled=12.8
+2026-03-27 11:47:30 [rank 0] INFO: [numeric] cuda_runtime=12.8
+2026-03-27 11:47:30 [rank 0] INFO: [numeric] device_name=NVIDIA A100 80GB PCIe
+2026-03-27 11:47:30 [rank 0] INFO: [numeric] attn_impl=sdpa
+2026-03-27 11:47:30 [rank 0] INFO: [numeric] sdp_flash=False
+2026-03-27 11:47:30 [rank 0] INFO: [numeric] sdp_mem_efficient=True
+2026-03-27 11:47:30 [rank 0] INFO: [numeric] sdp_math=True
+2026-03-27 11:47:30 [rank 0] INFO: [numeric] allow_tf32_matmul=False
+2026-03-27 11:47:30 [rank 0] INFO: [numeric] allow_tf32_cudnn=True
+2026-03-27 11:47:30 [rank 0] INFO: [numeric] PYTORCH_FORCE_DISABLE_FUSED_SDPA=None
+2026-03-27 11:47:30 [rank 0] INFO: [numeric] flash_attn_version=2.8.3
+2026-03-27 11:47:30 [rank 0] INFO: [numeric] os=Linux 5.15.0-164-generic
+2026-03-27 11:47:30 [rank 0] INFO: ================================================================================
+2026-03-27 11:47:30 [rank 0] INFO: 🔍 [Probing v1] Inference-time Modal Head Localization
+2026-03-27 11:47:30 [rank 0] INFO: ================================================================================
+2026-03-27 11:47:30 [rank 0] INFO: 📊 Unimodal ratio: 0.0%
+2026-03-27 11:47:30 [rank 0] INFO: ================================================================================
+2026-03-27 11:47:30 [rank 0] INFO: Using fixed subset: Top 0 samples for unimodal probing.
+2026-03-27 11:47:31 [rank 0] INFO: 
+[1/4] Loading model with DeepSpeed...
+2026-03-27 11:47:31 [rank 0] INFO: [Model] Using attention implementation: sdpa
+2026-03-27 11:47:36 [rank 0] INFO: Model initialized with DeepSpeed on device 0
+2026-03-27 11:47:36 [rank 0] INFO: Model type after penetration: Qwen3VLForConditionalGeneration_Custom
+2026-03-27 11:47:36 [rank 0] INFO: 
+[2/4] Enabling attention collection...
+2026-03-27 11:47:36 [rank 0] INFO: Attention collection enabled
+2026-03-27 11:47:36 [rank 0] INFO: 
+[3/4] Collecting attention statistics...
+2026-03-27 11:47:36 [rank 0] INFO:   [3.1] Collecting from img_only data...
+2026-03-27 11:47:36 [rank 0] INFO:   [3.2] Collecting from text_only data...
+2026-03-27 11:47:36 [rank 0] INFO:   [3.3] Collecting from multimodal data...
+2026-03-27 11:49:36 [rank 0] INFO: Logger initialized. Logs will be written to results/DGM4/probe/sdpa/qwen3_vl_2B/0-256/probing_rank0.log
+2026-03-27 11:49:36 [rank 0] INFO: Multiprocessing start method set to 'spawn'.
+2026-03-27 11:49:36 [rank 0] INFO: ⚠️  [Probing] Disabled ZeRO optimization (stage -> 0) for inference-only mode
+2026-03-27 11:49:36 [rank 0] INFO: ===== SYSTEM SNAPSHOT =====
+rank/world: 0/1
+OS: Linux 5.15.0-164-generic (#174-Ubuntu SMP Fri Nov 14 20:25:16 UTC 2025)
+CPU logical/physical: 96/48
+Load(1m): 1.6708984375
+Threads (intra/inter): 1/1
+GPU[0] NVIDIA A100 80GB PCIe total_mem=79.14 GB (cuda_count=1)
+Attention backend: sdpa
+Env: {'CUDA_VISIBLE_DEVICES': '7', 'LOCAL_RANK': '0', 'RANK': '0', 'WORLD_SIZE': '1', 'NCCL_IB_DISABLE': '1', 'NCCL_DEBUG': '-', 'OMP_NUM_THREADS': '1', 'MKL_NUM_THREADS': '1', 'NUMEXPR_NUM_THREADS': '1', 'TOKENIZERS_PARALLELISM': 'false'}
+Train micro batch / GPU: 24 | DP=1 GACC=1 | global_micro(b/sample-step)=24
+===========================
+2026-03-27 11:49:36 [rank 0] INFO: [numeric] torch=2.8.0+cu128
+2026-03-27 11:49:36 [rank 0] INFO: [numeric] cuda_compiled=12.8
+2026-03-27 11:49:36 [rank 0] INFO: [numeric] cuda_runtime=12.8
+2026-03-27 11:49:36 [rank 0] INFO: [numeric] device_name=NVIDIA A100 80GB PCIe
+2026-03-27 11:49:36 [rank 0] INFO: [numeric] attn_impl=sdpa
+2026-03-27 11:49:36 [rank 0] INFO: [numeric] sdp_flash=False
+2026-03-27 11:49:36 [rank 0] INFO: [numeric] sdp_mem_efficient=True
+2026-03-27 11:49:36 [rank 0] INFO: [numeric] sdp_math=True
+2026-03-27 11:49:36 [rank 0] INFO: [numeric] allow_tf32_matmul=False
+2026-03-27 11:49:36 [rank 0] INFO: [numeric] allow_tf32_cudnn=True
+2026-03-27 11:49:36 [rank 0] INFO: [numeric] PYTORCH_FORCE_DISABLE_FUSED_SDPA=None
+2026-03-27 11:49:36 [rank 0] INFO: [numeric] flash_attn_version=2.8.3
+2026-03-27 11:49:36 [rank 0] INFO: [numeric] os=Linux 5.15.0-164-generic
+2026-03-27 11:49:36 [rank 0] INFO: ================================================================================
+2026-03-27 11:49:36 [rank 0] INFO: 🔍 [Probing v1] Inference-time Modal Head Localization
+2026-03-27 11:49:36 [rank 0] INFO: ================================================================================
+2026-03-27 11:49:36 [rank 0] INFO: 📊 Unimodal ratio: 0.0%
+2026-03-27 11:49:36 [rank 0] INFO: ================================================================================
+2026-03-27 11:49:36 [rank 0] INFO: Using fixed subset: Top 0 samples for unimodal probing.
+2026-03-27 11:49:37 [rank 0] INFO: 
+[1/4] Loading model with DeepSpeed...
+2026-03-27 11:49:37 [rank 0] INFO: [Model] Using attention implementation: sdpa
+2026-03-27 11:49:41 [rank 0] INFO: Model initialized with DeepSpeed on device 0
+2026-03-27 11:49:41 [rank 0] INFO: Model type after penetration: Qwen3VLForConditionalGeneration_Custom
+2026-03-27 11:49:41 [rank 0] INFO: 
+[2/4] Enabling attention collection...
+2026-03-27 11:49:41 [rank 0] INFO: Attention collection enabled
+2026-03-27 11:49:41 [rank 0] INFO: 
+[3/4] Collecting attention statistics...
+2026-03-27 11:49:41 [rank 0] INFO:   [3.1] Collecting from img_only data...
+2026-03-27 11:49:41 [rank 0] INFO:   [3.2] Collecting from text_only data...
+2026-03-27 11:49:41 [rank 0] INFO:   [3.3] Collecting from multimodal data...
+2026-03-27 11:50:46 [rank 0] INFO: Logger initialized. Logs will be written to results/DGM4/probe/sdpa/qwen3_vl_2B/0-256/probing_rank0.log
+2026-03-27 11:50:46 [rank 0] INFO: Multiprocessing start method set to 'spawn'.
+2026-03-27 11:50:46 [rank 0] INFO: ⚠️  [Probing] Disabled ZeRO optimization (stage -> 0) for inference-only mode
+2026-03-27 11:50:46 [rank 0] INFO: ===== SYSTEM SNAPSHOT =====
+rank/world: 0/1
+OS: Linux 5.15.0-164-generic (#174-Ubuntu SMP Fri Nov 14 20:25:16 UTC 2025)
+CPU logical/physical: 96/48
+Load(1m): 1.93798828125
+Threads (intra/inter): 1/1
+GPU[0] NVIDIA A100 80GB PCIe total_mem=79.14 GB (cuda_count=1)
+Attention backend: sdpa
+Env: {'CUDA_VISIBLE_DEVICES': '7', 'LOCAL_RANK': '0', 'RANK': '0', 'WORLD_SIZE': '1', 'NCCL_IB_DISABLE': '1', 'NCCL_DEBUG': '-', 'OMP_NUM_THREADS': '1', 'MKL_NUM_THREADS': '1', 'NUMEXPR_NUM_THREADS': '1', 'TOKENIZERS_PARALLELISM': 'false'}
+Train micro batch / GPU: 24 | DP=1 GACC=1 | global_micro(b/sample-step)=24
+===========================
+2026-03-27 11:50:46 [rank 0] INFO: [numeric] torch=2.8.0+cu128
+2026-03-27 11:50:46 [rank 0] INFO: [numeric] cuda_compiled=12.8
+2026-03-27 11:50:46 [rank 0] INFO: [numeric] cuda_runtime=12.8
+2026-03-27 11:50:46 [rank 0] INFO: [numeric] device_name=NVIDIA A100 80GB PCIe
+2026-03-27 11:50:46 [rank 0] INFO: [numeric] attn_impl=sdpa
+2026-03-27 11:50:46 [rank 0] INFO: [numeric] sdp_flash=False
+2026-03-27 11:50:46 [rank 0] INFO: [numeric] sdp_mem_efficient=True
+2026-03-27 11:50:46 [rank 0] INFO: [numeric] sdp_math=True
+2026-03-27 11:50:46 [rank 0] INFO: [numeric] allow_tf32_matmul=False
+2026-03-27 11:50:46 [rank 0] INFO: [numeric] allow_tf32_cudnn=True
+2026-03-27 11:50:46 [rank 0] INFO: [numeric] PYTORCH_FORCE_DISABLE_FUSED_SDPA=None
+2026-03-27 11:50:46 [rank 0] INFO: [numeric] flash_attn_version=2.8.3
+2026-03-27 11:50:46 [rank 0] INFO: [numeric] os=Linux 5.15.0-164-generic
+2026-03-27 11:50:46 [rank 0] INFO: ================================================================================
+2026-03-27 11:50:46 [rank 0] INFO: 🔍 [Probing v1] Inference-time Modal Head Localization
+2026-03-27 11:50:46 [rank 0] INFO: ================================================================================
+2026-03-27 11:50:46 [rank 0] INFO: 📊 Unimodal ratio: 0.0%
+2026-03-27 11:50:46 [rank 0] INFO: ================================================================================
+2026-03-27 11:50:46 [rank 0] INFO: Using fixed subset: Top 0 samples for unimodal probing.
+2026-03-27 11:50:47 [rank 0] INFO: 
+[1/4] Loading model with DeepSpeed...
+2026-03-27 11:50:47 [rank 0] INFO: [Model] Using attention implementation: sdpa
+2026-03-27 11:50:51 [rank 0] INFO: Model initialized with DeepSpeed on device 0
+2026-03-27 11:50:51 [rank 0] INFO: Model type after penetration: Qwen3VLForConditionalGeneration_Custom
+2026-03-27 11:50:51 [rank 0] INFO: 
+[2/4] Enabling attention collection...
+2026-03-27 11:50:51 [rank 0] INFO: Attention collection enabled
+2026-03-27 11:50:51 [rank 0] INFO: 
+[3/4] Collecting attention statistics...
+2026-03-27 11:50:51 [rank 0] INFO:   [3.1] Collecting from img_only data...
+2026-03-27 11:50:51 [rank 0] INFO:   [3.2] Collecting from text_only data...
+2026-03-27 11:50:51 [rank 0] INFO:   [3.3] Collecting from multimodal data...
+2026-03-27 11:51:37 [rank 0] INFO: 
+[4/4] Saving results...
+2026-03-27 11:51:37 [rank 0] INFO: 
+✅ Head roles saved to: results/DGM4/probe/sdpa/qwen3_vl_2B/0-256/head_roles_top50_20260327_115137.json
+2026-03-27 11:51:37 [rank 0] INFO:    - Layers processed: 28
+2026-03-27 11:51:37 [rank 0] INFO:    - Total heads: 448
+2026-03-27 11:51:37 [rank 0] INFO: 
+================================================================================
+2026-03-27 11:51:37 [rank 0] INFO: ✅ [Probing v1] Inference completed successfully!
+2026-03-27 11:51:37 [rank 0] INFO: ================================================================================
+2026-03-27 11:52:53 [rank 0] INFO: Logger initialized. Logs will be written to results/DGM4/probe/sdpa/qwen3_vl_2B/0-256/probing_rank0.log
+2026-03-27 11:52:53 [rank 0] INFO: Multiprocessing start method set to 'spawn'.
+2026-03-27 11:52:53 [rank 0] INFO: ⚠️  [Probing] Disabled ZeRO optimization (stage -> 0) for inference-only mode
+2026-03-27 11:52:53 [rank 0] INFO: ===== SYSTEM SNAPSHOT =====
+rank/world: 0/1
+OS: Linux 5.15.0-164-generic (#174-Ubuntu SMP Fri Nov 14 20:25:16 UTC 2025)
+CPU logical/physical: 96/48
+Load(1m): 1.9580078125
+Threads (intra/inter): 1/1
+GPU[0] NVIDIA A100 80GB PCIe total_mem=79.14 GB (cuda_count=1)
+Attention backend: sdpa
+Env: {'CUDA_VISIBLE_DEVICES': '7', 'LOCAL_RANK': '0', 'RANK': '0', 'WORLD_SIZE': '1', 'NCCL_IB_DISABLE': '1', 'NCCL_DEBUG': '-', 'OMP_NUM_THREADS': '1', 'MKL_NUM_THREADS': '1', 'NUMEXPR_NUM_THREADS': '1', 'TOKENIZERS_PARALLELISM': 'false'}
+Train micro batch / GPU: 24 | DP=1 GACC=1 | global_micro(b/sample-step)=24
+===========================
+2026-03-27 11:52:53 [rank 0] INFO: [numeric] torch=2.8.0+cu128
+2026-03-27 11:52:53 [rank 0] INFO: [numeric] cuda_compiled=12.8
+2026-03-27 11:52:53 [rank 0] INFO: [numeric] cuda_runtime=12.8
+2026-03-27 11:52:53 [rank 0] INFO: [numeric] device_name=NVIDIA A100 80GB PCIe
+2026-03-27 11:52:53 [rank 0] INFO: [numeric] attn_impl=sdpa
+2026-03-27 11:52:53 [rank 0] INFO: [numeric] sdp_flash=False
+2026-03-27 11:52:53 [rank 0] INFO: [numeric] sdp_mem_efficient=True
+2026-03-27 11:52:53 [rank 0] INFO: [numeric] sdp_math=True
+2026-03-27 11:52:53 [rank 0] INFO: [numeric] allow_tf32_matmul=False
+2026-03-27 11:52:53 [rank 0] INFO: [numeric] allow_tf32_cudnn=True
+2026-03-27 11:52:53 [rank 0] INFO: [numeric] PYTORCH_FORCE_DISABLE_FUSED_SDPA=None
+2026-03-27 11:52:53 [rank 0] INFO: [numeric] flash_attn_version=2.8.3
+2026-03-27 11:52:53 [rank 0] INFO: [numeric] os=Linux 5.15.0-164-generic
+2026-03-27 11:52:53 [rank 0] INFO: ================================================================================
+2026-03-27 11:52:53 [rank 0] INFO: 🔍 [Probing v1] Inference-time Modal Head Localization
+2026-03-27 11:52:53 [rank 0] INFO: ================================================================================
+2026-03-27 11:52:53 [rank 0] INFO: 📊 Unimodal ratio: 0.0%
+2026-03-27 11:52:53 [rank 0] INFO: ================================================================================
+2026-03-27 11:52:53 [rank 0] INFO: Using fixed subset: Top 0 samples for unimodal probing.
+2026-03-27 11:52:54 [rank 0] INFO: 
+[1/4] Loading model with DeepSpeed...
+2026-03-27 11:52:54 [rank 0] INFO: [Model] Using attention implementation: sdpa
+2026-03-27 11:52:58 [rank 0] INFO: Model initialized with DeepSpeed on device 0
+2026-03-27 11:52:58 [rank 0] INFO: Model type after penetration: Qwen3VLForConditionalGeneration_Custom
+2026-03-27 11:52:58 [rank 0] INFO: 
+[2/4] Enabling attention collection...
+2026-03-27 11:52:58 [rank 0] INFO: Attention collection enabled
+2026-03-27 11:52:58 [rank 0] INFO: 
+[3/4] Collecting attention statistics...
+2026-03-27 11:52:58 [rank 0] INFO:   [3.1] Collecting from img_only data...
+2026-03-27 11:52:58 [rank 0] INFO:   [3.2] Collecting from text_only data...
+2026-03-27 11:52:58 [rank 0] INFO:   [3.3] Collecting from multimodal data...
+2026-03-27 12:50:42 [rank 0] INFO: 
+[4/4] Saving results...
+2026-03-27 12:50:52 [rank 0] INFO: 
+✅ Head roles saved to: results/DGM4/probe/sdpa/qwen3_vl_2B/0-256/head_roles_top50_20260327_125042.json
+2026-03-27 12:50:52 [rank 0] INFO:    - Layers processed: 28
+2026-03-27 12:50:52 [rank 0] INFO:    - Total heads: 448
+2026-03-27 12:50:52 [rank 0] INFO: 
+================================================================================
+2026-03-27 12:50:52 [rank 0] INFO: ✅ [Probing v1] Inference completed successfully!
+2026-03-27 12:50:52 [rank 0] INFO: ================================================================================

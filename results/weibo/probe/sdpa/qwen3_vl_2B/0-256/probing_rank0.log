@@ -1,0 +1,56 @@
+2026-03-29 23:53:49 [rank 0] INFO: Logger initialized. Logs will be written to results/weibo/probe/sdpa/qwen3_vl_2B/0-256/probing_rank0.log
+2026-03-29 23:53:49 [rank 0] INFO: Multiprocessing start method set to 'spawn'.
+2026-03-29 23:53:49 [rank 0] INFO: ⚠️  [Probing] Disabled ZeRO optimization (stage -> 0) for inference-only mode
+2026-03-29 23:53:49 [rank 0] INFO: ===== SYSTEM SNAPSHOT =====
+rank/world: 0/1
+OS: Linux 5.15.0-168-generic (#178-Ubuntu SMP Fri Jan 9 19:05:03 UTC 2026)
+CPU logical/physical: 96/48
+Load(1m): 12.56591796875
+Threads (intra/inter): 1/1
+GPU[0] NVIDIA A100 80GB PCIe total_mem=79.14 GB (cuda_count=1)
+Attention backend: sdpa
+Env: {'CUDA_VISIBLE_DEVICES': '2', 'LOCAL_RANK': '0', 'RANK': '0', 'WORLD_SIZE': '1', 'NCCL_IB_DISABLE': '1', 'NCCL_DEBUG': '-', 'OMP_NUM_THREADS': '1', 'MKL_NUM_THREADS': '1', 'NUMEXPR_NUM_THREADS': '1', 'TOKENIZERS_PARALLELISM': 'false'}
+Train micro batch / GPU: 24 | DP=1 GACC=1 | global_micro(b/sample-step)=24
+===========================
+2026-03-29 23:53:49 [rank 0] INFO: [numeric] torch=2.8.0+cu128
+2026-03-29 23:53:49 [rank 0] INFO: [numeric] cuda_compiled=12.8
+2026-03-29 23:53:49 [rank 0] INFO: [numeric] cuda_runtime=12.8
+2026-03-29 23:53:49 [rank 0] INFO: [numeric] device_name=NVIDIA A100 80GB PCIe
+2026-03-29 23:53:49 [rank 0] INFO: [numeric] attn_impl=sdpa
+2026-03-29 23:53:49 [rank 0] INFO: [numeric] sdp_flash=False
+2026-03-29 23:53:49 [rank 0] INFO: [numeric] sdp_mem_efficient=True
+2026-03-29 23:53:49 [rank 0] INFO: [numeric] sdp_math=True
+2026-03-29 23:53:49 [rank 0] INFO: [numeric] allow_tf32_matmul=False
+2026-03-29 23:53:49 [rank 0] INFO: [numeric] allow_tf32_cudnn=True
+2026-03-29 23:53:49 [rank 0] INFO: [numeric] PYTORCH_FORCE_DISABLE_FUSED_SDPA=None
+2026-03-29 23:53:50 [rank 0] INFO: [numeric] flash_attn_version=2.8.3
+2026-03-29 23:53:50 [rank 0] INFO: [numeric] os=Linux 5.15.0-168-generic
+2026-03-29 23:53:50 [rank 0] INFO: ================================================================================
+2026-03-29 23:53:50 [rank 0] INFO: 🔍 [Probing v1] Inference-time Modal Head Localization
+2026-03-29 23:53:50 [rank 0] INFO: ================================================================================
+2026-03-29 23:53:50 [rank 0] INFO: 📊 Unimodal ratio: 0.0%
+2026-03-29 23:53:50 [rank 0] INFO: ================================================================================
+2026-03-29 23:53:50 [rank 0] INFO: Using fixed subset: Top 0 samples for unimodal probing.
+2026-03-29 23:53:50 [rank 0] INFO: 
+[1/4] Loading model with DeepSpeed...
+2026-03-29 23:53:50 [rank 0] INFO: [Model] Using attention implementation: sdpa
+2026-03-29 23:53:54 [rank 0] INFO: Model initialized with DeepSpeed on device 0
+2026-03-29 23:53:54 [rank 0] INFO: Model type after penetration: Qwen3VLForConditionalGeneration_Custom
+2026-03-29 23:53:54 [rank 0] INFO: 
+[2/4] Enabling attention collection...
+2026-03-29 23:53:54 [rank 0] INFO: Attention collection enabled
+2026-03-29 23:53:54 [rank 0] INFO: 
+[3/4] Collecting attention statistics...
+2026-03-29 23:53:54 [rank 0] INFO:   [3.1] Collecting from img_only data...
+2026-03-29 23:53:54 [rank 0] INFO:   [3.2] Collecting from text_only data...
+2026-03-29 23:53:54 [rank 0] INFO:   [3.3] Collecting from multimodal data...
+2026-03-30 00:06:24 [rank 0] INFO: 
+[4/4] Saving results...
+2026-03-30 00:06:26 [rank 0] INFO: 
+✅ Head roles saved to: results/weibo/probe/sdpa/qwen3_vl_2B/0-256/head_roles_top50_20260330_000624.json
+2026-03-30 00:06:26 [rank 0] INFO:    - Layers processed: 28
+2026-03-30 00:06:26 [rank 0] INFO:    - Total heads: 448
+2026-03-30 00:06:26 [rank 0] INFO: 
+================================================================================
+2026-03-30 00:06:26 [rank 0] INFO: ✅ [Probing v1] Inference completed successfully!
+2026-03-30 00:06:26 [rank 0] INFO: ================================================================================
